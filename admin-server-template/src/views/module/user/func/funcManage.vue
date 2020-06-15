@@ -25,8 +25,8 @@
                             </Form-item>
                             <Form-item label="创建时间">
                                 <DatePicker v-model="selectDate" type="daterange" format="yyyy-MM-dd" clearable
-                                    @on-change="selectDateRange" placeholder="选择起始时间"
-                                    style="width: 200px"></DatePicker>
+                                            @on-change="selectDateRange" placeholder="选择起始时间"
+                                            style="width: 200px"></DatePicker>
                             </Form-item>
 
                             <Form-item style="margin-left:-35px;" class="br">
@@ -36,7 +36,7 @@
                         </Form>
                     </Row>
                     <Row class="operation">
-                        <Button @click="add" type="primary" icon="md-add" v-has="'add'">新增用户</Button>
+                        <Button @click="add" type="primary" icon="md-add" v-has="'add'">新增职能范围</Button>
                         <Button @click="delAll" icon="md-trash" v-has="'delete'">批量删除</Button>
                         <Dropdown @on-click="handleDropdown">
                             <Button>
@@ -137,7 +137,7 @@
     import moment from 'moment';
 
     export default {
-        name: "function-manage",
+        name: "func-manage",
         data() {
 
             const validatePassword = (rule, value, callback) => {
